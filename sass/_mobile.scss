@@ -1,0 +1,50 @@
+/* max width 575px*/
+@include xs {
+}
+/* min width 576px*/
+@include sm {
+    @for $i from 1 through 100 {
+        .w-sm-#{$i} {
+            width:$i#{'% !important'};
+        }
+    }
+}
+/* min width 768px*/
+@include md {
+        @for $i from 1 through 100 {
+        .w-md-#{$i} {
+            width:$i#{'% !important'};
+        }
+    }
+    .tabssoft {
+        .nav-link {
+            min-height: 100px;
+            line-height: 100px;
+        }
+    }
+}
+/* min width 992px*/
+@include lg {
+        @for $i from 1 through 100 {
+        .w-lg-#{$i} {
+            width:$i#{'% !important'};
+        }
+    }
+    header {
+        .titleinfo {
+            h2 {
+                &:after {
+                    margin: 5% 0;
+                }
+            }
+        }
+    }
+}
+/* min width 1200px*/
+@include xl {
+     @for $i from 1 through 100 {
+        .w-xl-#{$i} {
+            width:$i#{'% !important'};
+        }
+    }
+}

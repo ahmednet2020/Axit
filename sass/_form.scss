@@ -1,0 +1,39 @@
+form {
+    @extend .bgwith-color;
+    border-radius: 1rem;
+    overflow: hidden;
+    h4 {
+        font-size: 1.4rem;
+    }
+    .form-control {
+        border: 0;
+        margin: 3rem auto;
+        text-indent: 5%;
+        border-bottom: 1px solid rgba($minbackcolor, 0.1);
+    }
+    .form-control[type="submit"] {
+        font-size: 1.4rem;
+        line-height: 2;
+        text-indent: 0;
+        border: 0;
+        cursor: pointer;
+    }
+    .form-control:focus {
+        color: $minbackcolor;
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none;
+    }
+}
+    textarea{
+    vertical-align: top;
+    resize: none;
+    @include md{
+    height: 13.1rem;
+    }
+}
+.contactus{
+    .form-control[type="submit"] {
+        font-size: 1rem;    
+    }
+}

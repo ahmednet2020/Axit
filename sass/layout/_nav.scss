@@ -1,0 +1,33 @@
+ .navbar-dark {
+@extend .bgblack-color;
+        .navbar-nav {
+            .nav-link {
+                font-size: 1.3rem;
+              @include transition(0.5s);
+            }
+            .active {
+                .nav-link {
+                    color: $minorangcolor;
+                }
+            }
+        }
+    }
+    .navbar {
+        position: fixed;
+        z-index: 9999;
+        .timeline-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba($minorangcolor, 0.5);
+            z-index: 0;
+        }
+        .container {
+            z-index: 5;
+            .navbar-brand {
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+    }

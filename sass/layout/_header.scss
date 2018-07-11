@@ -1,0 +1,24 @@
+header {
+    background-image: url(../img/banner1.jpg);
+    background-size: cover;
+    min-height: 900px;
+    .overlay {
+        background-color: rgba($minbackcolor, 0.5);
+        height: 100%;
+        padding: 5% 0;
+    }
+    .titleinfo {
+        color: $withcolor;
+        h2 {
+            letter-spacing: 0.1rem;
+            font-weight: normal;
+            &:after {
+                content: "";
+                display: block;
+                width: 25%;
+                border: 1px solid $withcolor;
+                margin: 5% auto;
+            }
+        }
+    }
+}

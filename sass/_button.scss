@@ -1,0 +1,24 @@
+/*button style 1*/
+.btn-lightcolor {
+    border-color: $withcolor;
+    background-color: transparent;
+    border-radius: 0;
+    border-width: 2px;
+    cursor: pointer;
+    color: $minwithcolor;
+    &:hover {
+        background-color: $minorangcolor;
+    }
+}
+
+/*button style 2*/
+.btn-blackcolor {
+    background-color: $minbackcolor;
+    color: $withcolor;
+    border-color: $minbackcolor;
+    cursor: pointer;
+    &:hover {
+        background-color: $minorangcolor;
+        border-color: $minorangcolor;
+    }
+}

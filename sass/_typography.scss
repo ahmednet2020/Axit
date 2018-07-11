@@ -1,0 +1,76 @@
+p {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: rgba($minbackcolor, 0.5);
+    letter-spacing: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h1 {
+    color: $minwithcolor;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: $minbackcolor;
+}
+
+.bgblack-color,
+.bgdark-color,
+.overlay {
+    p {
+        color: rgba($minwithcolor, 0.5);
+    }
+    h2,
+    h3 {
+        color: $minwithcolor;
+    }
+}
+
+.number {
+    color: $withcolor !important;
+    font-size: 4rem;
+    span {
+        font-size: 40%;
+    }
+}
+
+.media-body {
+    h6 {
+        color: rgba($minbackcolor, 0.5);
+    }
+}
+footer{
+    h6{
+    color: rgba($minwithcolor,0.5); 
+    }
+}

@@ -1,0 +1,49 @@
+@mixin imgshadow () {
+    -webkit-box-shadow: 0px 0px 2rem 0.5rem rgba($minbackcolor, 0.4);
+    -moz-box-shadow: 0px 0px 2rem 0.5rem rgba($minbackcolor, 0.4);
+    -ms-box-shadow: 0px 0px 2rem 0.5rem rgba($minbackcolor, 0.4);
+    -o-box-shadow: 0px 0px 2rem 0.5rem rgba($minbackcolor, 0.4);
+    box-shadow: 0px 0px 2rem 0.5rem rgba($minbackcolor, 0.4);
+}
+
+@mixin transition($time: 1s, $effect: ease-in, $all: all) {
+    -webkit-transition: $all $time $effect;
+    -moz-transition: $all $time $effect;
+    -ms-transition: $all $time $effect;
+    transition: $all $time $effect;
+}
+
+@mixin xs() {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xl() {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@for $i from 1 through 100 {
+    .w-#{$i} {
+        width:$i#{'% !important'};
+    }
+}

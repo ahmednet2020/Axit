@@ -1,0 +1,17 @@
+.navbar-dark .navbar-nav .nav-link{
+	color: inherit;
+}
+.btn,.btn:focus, .btn.focus{
+	box-shadow:none;
+
+}
+a:hover{
+	color: $withcolor;
+}
+.card-title{
+	margin-bottom: 0;
+	border-bottom: 1px solid $withcolor;
+}
+.card-subtitle{
+	color: rgba($minwithcolor, 0.5);
+}
